@@ -21,3 +21,9 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: ${{ secrets.TARGET_DIR }}
+    
+      - name: Dotnet Publish
+        run: |
+           sudo dotnet publish -o /var/www/dotnet-core-webapp
+        working-directory: /home/ubuntu/dotnet-core-webapp
+        
