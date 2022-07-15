@@ -25,3 +25,4 @@ jobs:
       - name: Dotnet Publish
         run: |
            sudo dotnet publish -o /var/www/dotnet-core-webapp
+            working-directory: /home/ubuntu/dotnet-core-webapp
