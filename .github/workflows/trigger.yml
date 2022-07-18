@@ -19,4 +19,8 @@ jobs:
     - name: remove files
       run: |
         rm -f text
-      working-directory: /home/ubuntu/app/app1
+      working-directory: /var/www/dotnet_app
+    - name: Dotnet Publish
+      run: |
+       sudo dotnet publish -o /var/www/dotnet_app
+      working-directory: /home/ubuntu/dotnet-core-webapp
