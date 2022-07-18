@@ -18,7 +18,7 @@ jobs:
         dotnet-version: '6.0.301'
     - name: remove files
       run: |
-        rm -f dotnetcore-webapp.dll
+        sudo rm -f dotnetcore-webapp.dll
       working-directory: /var/www/dotnet_app
     - name: dotnet retore
       run: |
