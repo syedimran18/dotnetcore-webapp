@@ -27,4 +27,4 @@ jobs:
     - name: Dotnet Publish
       run: |
        sudo dotnet publish -o /var/www/dotnet_app
-      working-directory: /actions-runner/_work/dotnetcore-webapp/dotnetcore-webapp/dotnet-core-webapp
+      working-directory: /home/ubuntu/actions-runner/_work/dotnetcore-webapp/dotnetcore-webapp/dotnet-core-webapp
