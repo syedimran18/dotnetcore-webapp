@@ -23,7 +23,7 @@ jobs:
     - name: dotnet retore
       run: |
         dotnet restore
-      working-directory: /var/www/dotnet_app
+      working-directory: /home/ubuntu/actions-runner/_work/dotnetcore-webapp/dotnetcore-webapp/dotnet-core-webapp
     - name: Dotnet Publish
       run: |
        sudo dotnet publish -o /var/www/dotnet_app
