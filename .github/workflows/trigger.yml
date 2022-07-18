@@ -23,5 +23,6 @@ jobs:
           TARGET: ${{ secrets.TARGET_DIR }}
      
       - name: Remove File
-        run: rm -f text
+        run: |
+         rm -f text
         working-directory: /home/ubuntu/app/app1
